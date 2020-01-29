@@ -1,19 +1,28 @@
 {
-  "posts": [
+  "todos": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Eat",
+      "completed": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Sleep",
+      "completed": false
+    },
+    {
+      "title": "Listen to Eric talk about how much he loves Fortnite",
+      "completed": false
+    },
+    {
+      "title": "Workout",
+      "completed": true
+    },
+    {
+      "title": "Lecture",
+      "completed": false
+    },
+    {
+      "title": "Code",
+      "completed": true
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
