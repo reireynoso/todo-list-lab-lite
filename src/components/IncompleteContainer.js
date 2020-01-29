@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchBarComponent from './SearchBarComponent'
 
 const IncompleteContainer = () => {
     return (
