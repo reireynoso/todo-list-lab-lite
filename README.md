@@ -17,46 +17,19 @@ We will pass the list of todos and render each onto the page while organizing wh
 
 Ultimately, we want our App to look something like:
 
-![Image of Finished](public/finishedApp.png)
+![Image of Finished](public/finishedProd.png)
 
 ## Deliverables
 
-* Fetch the data from http://localhost:3000/todos
-* Render the each todo in the appropriate component
+* Pass the data from App.js stored in todosArr.
+* Render each todo in the appropriate component.
 * Each todo card will have button to change the complete status which will conditionally render based on the location of component. (i.e if a todo is under the Complete, the button text should say Incomplete and vice-versa.)
-
-Here is a gif of what it's supposed to look:
-
-![Change Complete Gif](public/ChangingTasks.gif)
-
-* Add a new todo. Make a POST request to http://localhost:3000/todos. 
-Don't forget: 
-```
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-    },
-    body: JSON.stringify({})
-```
-* When the todo is successfully created in the server, make sure it is also rendered in React.
-* Delete a todo. Make a DELETE request to http://localhost:3000/todos/:id
-Don't forget:
-```
-    method: "DELETE"
-```
-* When the todo is successfully deleted, also remove from React.
-
-Here is a gif of what it's supposed to look:
-
-![Add Delete Todo](public/AddDeleteTodo.gif)
-
 * Incorporate the SearchBarComponent within the Incomplete Component to filter out todos. As you type, the Incomplete todos are dynamically rendered. 
 
 Here is a gif of what it's supposed to look:
 
-![Search Todos](public/SearchTodos.gif)
+![Change Complete Gif](public/Demo.gif)
 
 ### Bonus
 
-* Notice the Complete and Incomplete Components are bit redundant. Anyway to reuse just one component for both of them? (You may have to restructure a component to make this successfully work.)
+* Add a delete button with each todo. When the todo is deleted, also remove from React.
