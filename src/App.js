@@ -36,11 +36,29 @@ class App extends React.Component{
     todos: todosArr
   }
 
+  handleCompleteChange = (taskObj) => {
+    // console.log(taskObj)
+    const updatedTodos = this.state.todos.map(todo => {
+      if(todo.title === taskObj.title){
+        let updateTodo = {
+          ...todo,
+          completed: !todo.completed
+        }
+        return updateTodo
+      }
+      return todo
+    })
+
+    this.setState({
+      todos: updatedTodos
+    })
+  }
+
   render(){
     return (
       <div className="App">
         <Header/>
-        <ToDoContainer/>
+        <ToDoContainer handleCompleteChange={this.handleCompleteChange} todos={this.state.todos}/>
       </div>
     );
   }
