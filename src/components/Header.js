@@ -6,7 +6,7 @@ const Header = () => {
         <div className="ui inverted vertical masthead center aligned segment">
             <h1>React ToDo List</h1>
             <div className="image">
-                <img src="/logo192.png"/>
+                <img alt="rei-act" src="/logo192.png"/>
             </div>
         </div>
     </div>
